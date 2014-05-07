@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BACKITUP</string>
+    <string name="Sign_up">SIGN UP</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="confirm_password">Confirm Password:</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="cancel">Cancel</string>
+    <string name="username_hint">Enter Username</string>
+    <string name="password_hint">Enter Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="label">Select Up to 5 Directories</string>
+    <string name="add_directory">+</string>
+    <string name="browse">Browse</string>
+    <string name="text_setInter">Set Interval </string>
+    <string name="text_path1">File Path 1: </string>
+    <string name="text_path2">File Path 2: </string>
+    <string name="text_path3">File Path 3: </string>
+    <string name="text_path4">File Path 4: </string>
+    <string name="text_path5">File Path 5: </string>
+    <string name="title_activity_list_contents">ListContentsActivity</string>
+    <string name="attempts">attempts left:</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+
+</resources>
