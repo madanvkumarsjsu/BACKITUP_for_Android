@@ -20,12 +20,10 @@
             android:layout_height="wrap_content"
             android:text="@string/text_setInter" />
 
-        <EditText
-            android:id="@+id/edit_inter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" >
-        </EditText>
+        <Spinner
+            android:id="@+id/interval_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
@@ -49,7 +47,6 @@
             <requestFocus
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-
         </EditText>
 
         <Button
@@ -179,7 +176,7 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SAVE" 
-        android:onClick="savePreferences"/>
+        android:onClick="savePreferences"
+        android:text="SAVE" />
 
 </LinearLayout>
