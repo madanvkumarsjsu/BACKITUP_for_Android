@@ -79,7 +79,9 @@ public class ListContentsActivity extends ActionBarActivity {
 			}
 			CreateBucketForUser cb = new CreateBucketForUser("mybucket",
 					userName, this);
-			AsyncTask<Void, Void, String> tt = cb.execute();
+			//AsyncTask<Void, Void, String> tt = cb.execute();
+			//Intent intent = new Intent(this, NotificationActivity.class);
+			//startActivity(intent);
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -113,7 +115,7 @@ public class ListContentsActivity extends ActionBarActivity {
 			toEdit.putBoolean("first",false);
 			toEdit.commit(); 
 
-			Intent intent = new Intent(this, LoginActivity.class);
+			Intent intent = new Intent(this, SignInActivity.class);
 	  		startActivity(intent);
 			return true;
 		}
@@ -244,24 +246,6 @@ public class ListContentsActivity extends ActionBarActivity {
 				}
 				populateList();
 			}
-
-			/*
-			 * SharedPreferences sh = getSharedPreferences("BACKITUP",
-			 * MODE_PRIVATE); String path1 = sh.getString("path1", ""); String
-			 * path2 = sh.getString("path2", ""); String path3 =
-			 * sh.getString("path3", ""); String path4 = sh.getString("path4",
-			 * ""); String path5 = sh.getString("path5", "");
-			 * if(!"".equalsIgnoreCase(path1)){ AsyncTask<Void, Void, Void> ut1
-			 * = new Uploadtask(path1); ut1.execute(); }
-			 * if(!"".equalsIgnoreCase(path2)){ AsyncTask<Void, Void, Void> ut2
-			 * = new Uploadtask(path2); ut2.execute(); }
-			 * if(!"".equalsIgnoreCase(path3)){ AsyncTask<Void, Void, Void> ut3
-			 * = new Uploadtask(path3); ut3.execute(); }
-			 * if(!"".equalsIgnoreCase(path4)){ AsyncTask<Void, Void, Void> ut4
-			 * = new Uploadtask(path4); ut4.execute(); }
-			 * if(!"".equalsIgnoreCase(path5)){ AsyncTask<Void, Void, Void> ut5
-			 * = new Uploadtask(path5); ut5.execute(); }
-			 */
 		}
 
 		@Override

@@ -1019,7 +1019,7 @@ containing a value of this type.
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
         public static final int button1=0x7f05005f;
-        public static final int button2=0x7f050067;
+        public static final int button2=0x7f050061;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
         public static final int container=0x7f050040;
@@ -1041,7 +1041,7 @@ containing a value of this type.
         public static final int expanded_menu=0x7f05002c;
         public static final int fullscreen_content=0x7f05003c;
         public static final int fullscreen_content_controls=0x7f05003d;
-        public static final int hidden=0x7f050063;
+        public static final int hidden=0x7f050064;
         public static final int home=0x7f050014;
         public static final int homeAsUp=0x7f050005;
         public static final int icon=0x7f05002a;
@@ -1065,8 +1065,8 @@ containing a value of this type.
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
         public static final int password=0x7f050045;
-        public static final int password1=0x7f050064;
-        public static final int password2=0x7f050066;
+        public static final int password1=0x7f050065;
+        public static final int password2=0x7f050067;
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f05002f;
@@ -1090,8 +1090,8 @@ containing a value of this type.
         public static final int submit_area=0x7f050039;
         public static final int tabMode=0x7f050002;
         public static final int textInterval=0x7f050049;
-        public static final int textView1=0x7f050062;
-        public static final int textView2=0x7f050065;
+        public static final int textView1=0x7f050063;
+        public static final int textView2=0x7f050066;
         public static final int text_path1=0x7f05004b;
         public static final int text_path2=0x7f05004f;
         public static final int text_path3=0x7f050053;
@@ -1101,7 +1101,7 @@ containing a value of this type.
         public static final int top_action_bar=0x7f050020;
         public static final int up=0x7f050021;
         public static final int useLogo=0x7f050003;
-        public static final int username=0x7f050061;
+        public static final int username=0x7f050062;
         public static final int withText=0x7f05000c;
     }
     public static final class integer {
@@ -1157,20 +1157,23 @@ containing a value of this type.
         public static final int activity_home=0x7f030018;
         public static final int activity_list_contents=0x7f030019;
         public static final int activity_login=0x7f03001a;
-        public static final int activity_sign_in=0x7f03001b;
-        public static final int activity_sign_up=0x7f03001c;
-        public static final int fragment_home=0x7f03001d;
-        public static final int fragment_list_contents=0x7f03001e;
-        public static final int fragment_sign_in=0x7f03001f;
-        public static final int fragment_sign_up=0x7f030020;
-        public static final int support_simple_spinner_dropdown_item=0x7f030021;
+        public static final int activity_notification=0x7f03001b;
+        public static final int activity_sign_in=0x7f03001c;
+        public static final int activity_sign_up=0x7f03001d;
+        public static final int fragment_home=0x7f03001e;
+        public static final int fragment_list_contents=0x7f03001f;
+        public static final int fragment_notification=0x7f030020;
+        public static final int fragment_sign_in=0x7f030021;
+        public static final int fragment_sign_up=0x7f030022;
+        public static final int support_simple_spinner_dropdown_item=0x7f030023;
     }
     public static final class menu {
         public static final int home=0x7f0d0000;
         public static final int list_contents=0x7f0d0001;
         public static final int login=0x7f0d0002;
-        public static final int sign_in=0x7f0d0003;
-        public static final int sign_up=0x7f0d0004;
+        public static final int notification=0x7f0d0003;
+        public static final int sign_in=0x7f0d0004;
+        public static final int sign_up=0x7f0d0005;
     }
     public static final class string {
         public static final int Sign_up=0x7f0a000e;
@@ -1214,10 +1217,10 @@ containing a value of this type.
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
-        public static final int action_forgot_password=0x7f0a002e;
+        public static final int action_forgot_password=0x7f0a002f;
         public static final int action_settings=0x7f0a001a;
-        public static final int action_sign_in_register=0x7f0a002c;
-        public static final int action_sign_in_short=0x7f0a002d;
+        public static final int action_sign_in_register=0x7f0a002d;
+        public static final int action_sign_in_short=0x7f0a002e;
         public static final int add_directory=0x7f0a001e;
         public static final int app_name=0x7f0a000d;
         public static final int attempts=0x7f0a0027;
@@ -1225,20 +1228,20 @@ containing a value of this type.
         public static final int cancel=0x7f0a0014;
         public static final int confirm_password=0x7f0a0011;
         public static final int confirm_password_hint=0x7f0a0017;
-        public static final int error_field_required=0x7f0a0033;
-        public static final int error_incorrect_password=0x7f0a0032;
-        public static final int error_invalid_email=0x7f0a0030;
-        public static final int error_invalid_password=0x7f0a0031;
+        public static final int error_field_required=0x7f0a0034;
+        public static final int error_incorrect_password=0x7f0a0033;
+        public static final int error_invalid_email=0x7f0a0031;
+        public static final int error_invalid_password=0x7f0a0032;
         public static final int hello_world=0x7f0a0019;
         public static final int label=0x7f0a001d;
         public static final int login=0x7f0a0012;
-        public static final int login_progress_signing_in=0x7f0a002f;
+        public static final int login_progress_signing_in=0x7f0a0030;
         public static final int password=0x7f0a0010;
         public static final int password_hint=0x7f0a0016;
         /**  Strings related to login 
          */
-        public static final int prompt_email=0x7f0a002a;
-        public static final int prompt_password=0x7f0a002b;
+        public static final int prompt_email=0x7f0a002b;
+        public static final int prompt_password=0x7f0a002c;
         public static final int sign_out=0x7f0a001b;
         public static final int sign_up=0x7f0a0013;
         public static final int text_path1=0x7f0a0021;
@@ -1249,7 +1252,8 @@ containing a value of this type.
         public static final int text_setInter=0x7f0a0020;
         public static final int title_activity_home=0x7f0a001c;
         public static final int title_activity_list_contents=0x7f0a0026;
-        public static final int title_activity_login=0x7f0a0029;
+        public static final int title_activity_login=0x7f0a002a;
+        public static final int title_activity_notification=0x7f0a0029;
         public static final int title_activity_sign_in=0x7f0a0028;
         public static final int title_activity_sign_up=0x7f0a0018;
         public static final int username=0x7f0a000f;

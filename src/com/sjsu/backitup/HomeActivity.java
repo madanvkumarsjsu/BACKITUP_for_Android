@@ -1,5 +1,8 @@
 package com.sjsu.backitup;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 import com.sjsu.backitup.util.DirectoryChooser;
 
 import android.support.v7.app.ActionBarActivity;
@@ -10,6 +13,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Debug;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -215,31 +219,33 @@ public class HomeActivity extends ActionBarActivity {
 		editor.putString("path4", strPath4);
 		editor.putString("path5", strPath5);
 		editor.commit();
+		
+		SharedPreferences sh_Pref = getSharedPreferences("Login Credentials", MODE_PRIVATE);
+		String userName = sh_Pref.getString("usrnmLogged", "");
+		if ("".equalsIgnoreCase(userName)) {
+			userName = "TestUser";
+		}
 
+		int intervalCount = Integer.parseInt(interval);
 		Intent intent = new Intent(this, ListContentsActivity.class);
 		startActivity(intent);
 
-		UploadActivity uploadActivity; 
 		Debug.startMethodTracing();
-
-		/*while(true){
-			for(int i = 0; i <5; i++){
-				if(!"".equalsIgnoreCase("strPath"+i)){
-					uploadActivity = new UploadActivity("strPath"+i);
-					uploadActivity.execute();
-				}
-			}
-			try {
-				Thread.sleep(Long.parseLong(interval));
-			} catch (NumberFormatException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}*/
-
+		Timer timer = new Timer();
+		final UploadActivity uploadActivity = new UploadActivity(strPath1, strPath2, strPath3, strPath4, strPath5, userName, intervalCount); 
+//		TimerTask tt = new TimerTask() {
+//			
+//			@Override
+//			public void run() {
+//				Log.i("timer#########################", "taskexecuted");
+//				uploadActivity.execute();
+//			}
+//		};
+//		timer.scheduleAtFixedRate(tt, 0, intervalCount*1000);
+//		}
+//		catch(Exception ex){
+//			ex.printStackTrace();
+//		}
 	}
 
 	@Override

@@ -48,6 +48,10 @@
             android:name="com.sjsu.backitup.SignInActivity"
             android:label="@string/title_activity_sign_in" >
         </activity>
+        <activity
+            android:name="com.sjsu.backitup.NotificationActivity"
+            android:label="@string/title_activity_notification" >
+        </activity>
     </application>
 
 </manifest>
